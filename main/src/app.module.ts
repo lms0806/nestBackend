@@ -8,7 +8,7 @@ import { UserModule } from './User/user.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost:27017/your-db-name'),
+    MongooseModule.forRoot('mongodb://{ip}:{port}/nestBackend'),
     EventModule,
     AwardModule,
     UserModule,
